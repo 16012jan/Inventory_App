@@ -1,1 +1,5 @@
-  <h1>Angular 2</h1>
+<div class="inventory-app">
+  <products-list
+    [products]="products"
+    (selectedProduct) = "selectedProduct($event)"></products-list>
+</div>

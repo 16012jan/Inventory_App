@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
+  <meta charset="utf-8">
+  <title>ng-book 2: Inventory App</title>
   <base href="/">
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-   <link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-    <!-- polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
 
-    <script src="node_modules/zone.js/dist/zone.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+   <script src="node_modules/core-js/client/shim.min.js"></script>
+   <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
 
     <script src="systemjs.config.js"></script>
@@ -18,6 +17,23 @@
     </script>
 </head>
 <body>
-  <angular-app>Loading...</angular-app>
+
+ <div class="ui menu">
+   <div class="ui container">
+     <a href="#" class="header item">
+       ng-book 2
+     </a>
+     <div class="header item borderless">
+       <h1 class="ui header">
+         Angular Inventory App
+       </h1>
+     </div>
+   </div>
+ </div>
+
+ <div class="ui main text container">
+  <inventory-app-root>Loading...</inventory-app-root>
+</div>
+
 </body>
 </html>
